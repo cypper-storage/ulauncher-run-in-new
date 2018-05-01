@@ -34,7 +34,7 @@ class ItemEnterEventListener(EventListener):
 
     def on_event(self, event, extension):
         data = event.get_data() or ""
-        subprocess.Popen('gnome-terminal -- echo '+data, shell=True)
+        subprocess.Popen("gnome-terminal --window -x bash -c '"+data+";sleep 10'", shell=True)
 
         return RenderResultListAction([])
 
