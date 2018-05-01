@@ -21,7 +21,7 @@ class KeywordQueryEventListener(EventListener):
         data = event.get_argument()
         items = [
                 ExtensionResultItem(
-                    icon="icon.png",
+                    icon="images/icon.png",
                     name="Run a new shell with command",
                     description="" if not data else 'Run "%s" in shell' % data,
                     on_enter=ExtensionCustomAction(data),

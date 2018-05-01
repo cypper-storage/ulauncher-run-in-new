@@ -3,7 +3,7 @@
   "api_version": "1",
   "name": "Run extension",
   "description": "Runs a new shell with command",
-  "developer_name": "James Dumas",
+  "developer_name": "Cypper",
   "icon": "images/icon.png",
   "options": {
     "query_debounce": 1
